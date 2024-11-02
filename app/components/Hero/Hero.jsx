@@ -4,6 +4,7 @@ import { GoArrowDownRight } from "react-icons/go";
 import { gsap } from "gsap";
 import { revealText } from "./animations";
 import Lox from "../Lox/Lox";
+import Work from "../Work/Work";
 
 const Hero = ({ pageLoaded }) => {
     const heroRef = useRef(null);
@@ -48,7 +49,7 @@ const Hero = ({ pageLoaded }) => {
                 </header>
                 <Lox />
             </div>
-            
+            <Work />
         </div>
 
     );
