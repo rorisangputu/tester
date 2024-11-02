@@ -1,0 +1,37 @@
+.Lox {
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 7rem;
+  //border: 2px solid yellow;
+  .LoxText {
+    font-size: 7rem;
+    padding: 1rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    .setTrend {
+      color: rgb(250, 111, 30);
+      font-family: "Georgia", "Times New Roman", serif;
+      font-style: italic;
+      font-weight: 500;
+    }
+    .results {
+      color: rgb(146, 167, 250);
+      font-family: "Georgia", "Times New Roman", serif;
+      font-style: italic;
+      font-weight: 500;
+    }
+    .fearless {
+      color: rgb(130, 135, 6);
+      font-family: "Georgia", "Times New Roman", serif;
+      font-style: italic;
+      font-weight: 500;
+    }
+    .creativity {
+      color: rgb(117, 163, 144);
+      font-family: "Georgia", "Times New Roman", serif;
+      font-style: italic;
+      font-weight: 500;
+    }
+  }
+}

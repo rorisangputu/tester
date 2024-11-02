@@ -1,0 +1,122 @@
+.header {
+  height: 170vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #0d1f11;
+
+  .hero {
+    margin-top: 2rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+        font-size: 5rem;
+        font-weight: 500;
+      }
+
+      .contacts {
+        display: flex;
+        justify-content: space-between;
+        gap: 2;
+        width: 24vw;
+        font-size: 2.5rem;
+      }
+    }
+
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40vh;
+      //margin-top: 1rem;
+      margin-bottom: 5rem;
+      margin-top: 5rem;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+      overflow: hidden;
+      //border: 1px solid red;
+      /* Ensure no overflow issues */
+
+      .heroTitle {
+        color: #f5f5f5;
+        margin-right: 2rem;
+        font-size: 43.5rem;
+        font-family: "Helvetica", "Arial", sans-serif;
+        z-index: 1;
+        /* Ensure it sits on top */
+        position: relative;
+        /* Keep stacking context */
+      }
+
+      .heroBound {
+        color: #f5f5f5;
+        font-size: 38rem;
+        letter-spacing: -1.5rem;
+        font-family: "Helvetica", "Arial", sans-serif;
+        z-index: 0;
+        /* This will be behind the title */
+        position: absolute;
+        /* Positioned relative to the title */
+        top: 50%;
+        /* Center it vertically */
+        left: 48%;
+        /* Center it horizontally */
+        transform: translate(-50%, -50%);
+        /* Offset to center */
+      }
+    }
+
+    .subcontainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+
+      .subtitle {
+        display: flex;
+        font-size: 7rem;
+        color: rgb(146, 167, 250);
+        font-weight: 500;
+
+        .subtext {
+          margin-top: 2rem;
+          margin-left: 1rem;
+          font-family: "Georgia", "Times New Roman", serif;
+          font-style: italic;
+          width: 35vw;
+          letter-spacing: -0.5rem;
+
+          .subtextBlock {
+            display: block;
+          }
+        }
+      }
+
+      .scroll {
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: start;
+
+        .scrollarrow {
+          height: 6vh;
+          width: 4vh;
+          color: #204c06;
+        }
+
+        .scrolltext {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
