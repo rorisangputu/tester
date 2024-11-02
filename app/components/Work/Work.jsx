@@ -1,9 +1,18 @@
 import React from 'react'
-import styles from './Work.modules.scss';
+import './Work.modules.scss';
+import { GoArrowRight } from "react-icons/go";
+
 const Work = () => {
     return (
-        <div className={styles.workContainer}>
-
+        <div className='workContainer'>
+            <div className=''>
+                <h1 className=''>Want to see
+                    <span className=''>
+                        <GoArrowRight />
+                        our <span className=''>work?</span>
+                    </span>
+                </h1>
+            </div>
         </div>
     )
 }

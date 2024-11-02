@@ -11,18 +11,18 @@ export const animatePreload = () => {
     "[data-preload-title]",
     {
         y: 0,
-        duration: 0.5,
+        duration: 5,
         
     },
     {
-        y: 30,
+        y: 50,
         duration: 0.5,
         
     }
   );
 
   tl.to("[data-preload-title]", {
-    scaleY: 1.2,
+    y:0,
   });
   tl.fromTo(
     "[data-text]",
@@ -48,7 +48,7 @@ export const animatePage = () => {
     });
 
     tl.fromTo("[data-home-content]", {
-        y: 800,
+        y: 1000,
        
     }, {
         y: 0,
