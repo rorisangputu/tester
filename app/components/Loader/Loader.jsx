@@ -3,7 +3,7 @@ import styles from './Loader.module.scss';
 import { gsap } from 'gsap';
 import { animatePage, animatePreload, revealText, textChange } from './animations';
 import Hero from '../Hero/Hero';
-import Lox from '../Lox/Lox';
+
 
 
 const Loader = () => {
