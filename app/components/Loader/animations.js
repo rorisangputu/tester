@@ -89,20 +89,20 @@ export const textChange = () => {
 
   tl.fromTo('[data-title-first]', {
     autoAlpha: 1,
-    
+    duration: 5
   }, {
     autoAlpha: 0,
-    duration: 1,
+    duration: 2,
     
   })
 
   tl.fromTo('[data-title-second]', {
     autoAlpha: 0,
-    
+    duration: 5
   }, {
     autoAlpha: 1,
     duration: 2
-  },"<")
+  },"")
 
   return tl;
 }
