@@ -1,5 +1,5 @@
 .header {
-  height: 200vh;
+  height: 230vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,10 +34,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 40vh;
+      height: 45vh;
       //margin-top: 1rem;
       margin-bottom: 5rem;
-      margin-top: 5rem;
+      margin-top: 2rem;
       width: 100%;
       margin-right: auto;
       margin-left: auto;
@@ -59,8 +59,8 @@
 
       .heroBound {
         color: #f5f5f5;
-        font-size: 38rem;
-        letter-spacing: -1.5rem;
+        font-size: 39rem;
+        letter-spacing: -1.7rem;
         font-family: "Helvetica", "Arial", sans-serif;
         z-index: 0;
         /* This will be behind the title */
@@ -68,7 +68,7 @@
         /* Positioned relative to the title */
         top: 50%;
         /* Center it vertically */
-        left: 48%;
+        left: 48.5%;
         /* Center it horizontally */
         transform: translate(-50%, -50%);
         /* Offset to center */
