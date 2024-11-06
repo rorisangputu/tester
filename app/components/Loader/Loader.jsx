@@ -13,9 +13,11 @@ const Loader = () => {
     useEffect(() => {
         const context = gsap.context(() => {
             const tl = timeline.current;
-            tl.add(animatePreload())
-                .add(animatePage(), "<")
-                .add(revealText(), "+=0.1").add(textChange());
+            tl
+                .add(animatePreload())
+                .add(animatePage(), "<").add(textChange())
+                .add(revealText(), "<1.5");
+
             setPageLoaded(true);
         }, loaderRef);
 

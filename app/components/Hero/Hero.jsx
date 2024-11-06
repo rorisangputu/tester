@@ -24,11 +24,11 @@ const Hero = ({ pageLoaded }) => {
                             <p>info@laiotix.com</p>
                         </div>
                     </div>
-                    <div className={styles.title}>
+                    <div data-titles className={styles.title}>
                         <p data-title-first className={styles.heroTitle}>
                             LAIOTIX
                         </p>
-                        <p data-title-second data-hidden className={styles.heroBound}>INBOUND</p>
+                        <p data-title-second className={styles.heroBound}>INBOUND</p>
                     </div>
 
                     <div className={styles.subcontainer}>
