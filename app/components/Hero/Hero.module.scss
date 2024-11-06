@@ -63,7 +63,7 @@
         position: absolute;
         display: flex;
         flex-direction: row;
-        // border: 1px solid yellow;
+        border: 1px solid yellow;
         height: 100%;
         width: 100%;
         .heroBound {
@@ -87,15 +87,28 @@
           }
         
           .hoverImages{
-            // border: red 2px solid;
+            border: red 2px solid;
             height: 100%;
             width: 100%;
+            /* Set all images to be hidden initially */
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s ease;
+            /* Transition for smooth reveal */
+            
             .imageContainers {
-               position: absolute;
-                width: 300px;
-                /* Adjust width as needed */
-                height: 300px;
-              }
+              position: absolute;
+              width: 300px;
+              /* Adjust width as needed */
+              height: 300px;
+              transition: transform 0.3s ease-in-out;
+                    /* Optional: adds smooth hover effect */
+              
+            }
+            .imageContainers:hover {
+                  transform: scale(1.05);
+                  /* Slightly increase size on hover */
+             }
 
               .firstImg{
                 top: 0;
@@ -114,6 +127,10 @@
                 right: 0;
               }
           }
+      }
+      .hoverDiv:hover .hoverImages {
+        visibility: visible;
+        opacity: 1;
       }
     }
 

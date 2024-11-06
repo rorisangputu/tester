@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import styles from "./Hero.module.scss";
+import styles from "./Hero.module.css";
 import { GoArrowDownRight } from "react-icons/go";
 import { gsap } from "gsap";
 import { revealText } from "./animations";
@@ -32,7 +32,7 @@ const Hero = ({ pageLoaded }) => {
                         </p>
                         <div className={styles.hoverDiv}>
                             <p data-title-second className={styles.heroBound}>INBOUND</p>
-                            {/* <div className={styles.hoverImages}>
+                            <div className={styles.hoverImages}>
                                 <div className={`${styles.imageContainers} ${styles.firstImg}`}>
                                     <Image src="https://images.unsplash.com/photo-1600191763994-a5e80844476e?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" fill objectFit="cover" />
                                 </div>
@@ -48,7 +48,7 @@ const Hero = ({ pageLoaded }) => {
                                 <div className={`${styles.imageContainers} ${styles.fifthImg}`}>
                                     <Image src="https://images.unsplash.com/photo-1600191763994-a5e80844476e?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" fill objectFit="cover" />
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
 
