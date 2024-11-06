@@ -1,6 +1,5 @@
 import { gsap } from "gsap";
-import gsapTrial from 'gsap-trial'
-import {SplitText} from 'gsap-trial/SplitText'
+import SplitTextJS from "split-text-js";
 
 
 export const animatePreload = () => {
@@ -96,60 +95,42 @@ export const revealText = () => {
 };
 
 export const textChange = () => {
-  gsap.registerPlugin(SplitText)
+  //gsap.registerPlugin(SplitText)
   const tl = gsap.timeline();
 
-  // Split the first title into characters
-  const firstText = new SplitText("[data-title-first]", { type: "chars" });
-  const secondText = new SplitText("[data-title-second]", { type: "chars" });
+  // Find elements only if they exist in the DOM
+  const firstElement = document.querySelector("[data-title-first]");
+  const secondElement = document.querySelector("[data-title-second]");
 
-  // Animate the first title out
-  tl.fromTo(
+  if (firstElement && secondElement) {
+    // Split the text into characters
+    const firstText = new SplitTextJS(firstElement, { type: "chars" });
+    const secondText = new SplitTextJS(secondElement, { type: "chars" });
+
+    // Animate the first title in
+    tl.fromTo(
       firstText.chars,
-      {
-        autoAlpha: 0,
-        rotateX: -90,
-        y: 20,
-      },
-      {
-        autoAlpha: 1,
-        rotateX: 0,
-        y: 0,
-        duration: 0.9,
-        stagger: 0.1,
-        ease: "power1.out",
-      }
+      { autoAlpha: 0, rotateX: -90, y: 20 },
+      { autoAlpha: 1, rotateX: 0, y: 0, duration: 0.9, stagger: 0.1, ease: "power1.out" }
     );
 
+    // Animate the first title out
     tl.to(
       firstText.chars,
-      {
-        autoAlpha: 0,
-        rotateX: 90,
-        y: -20,
-        duration: 0.3,
-        stagger: 0.1,
-        ease: "power1.in",
-      },
+      { autoAlpha: 0, rotateX: 90, y: -20, duration: 0.3, stagger: 0.1, ease: "power1.in" },
       "+=3" // Start after the first text is fully visible
     );
-  tl.fromTo(
-    secondText.chars,
-    {
-      autoAlpha: 0,
-      y: 20, // Start slightly below
-      rotateX: 90, // Rotate in from above
-    },
-    {
-      autoAlpha: 1,
-      duration: 0.8,
-      y: 0,
-      rotateX: 0,
-      stagger: 0.1,
-      ease: "power1.out",
-    },
-    "<1" // Start after the first animation completes
-  );
+
+    // Animate the second title in
+    tl.fromTo(
+      secondText.chars,
+      { autoAlpha: 0, y: 20, rotateX: 90 },
+      { autoAlpha: 1, duration: 0.8, y: 0, rotateX: 0, stagger: 0.1, ease: "power1.out" },
+      "<1" // Start after the first animation completes
+    );
+  } else {
+    console.warn("Elements with [data-title-first] or [data-title-second] not found");
+  }
 
 
   // tl.fromTo(

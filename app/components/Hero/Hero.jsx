@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { revealText } from "./animations";
 import Lox from "../Lox/Lox";
 import Work from "../Work/Work";
+import Footer from "../Footer/Footer";
 
 const Hero = ({ pageLoaded }) => {
     const heroRef = useRef(null);
@@ -50,6 +51,7 @@ const Hero = ({ pageLoaded }) => {
                 <Lox />
             </div>
             <Work />
+            <Footer />
         </div>
 
     );
