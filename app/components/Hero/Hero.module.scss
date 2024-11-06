@@ -61,7 +61,7 @@
 
       .heroBound {
         color: #f5f5f5;
-        font-size: 36rem;
+        font-size: 36.5rem;
         //letter-spacing: -1.7rem;
         //font-family: "Helvetica", "Arial", sans-serif;
         z-index: 0;
@@ -70,7 +70,8 @@
         /* Positioned relative to the title */
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: start;
+        margin-right: 6rem;
         /* Offset to center */
         //border: 1px solid yellow;
         width: 100%;
