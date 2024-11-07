@@ -10,7 +10,14 @@ import Image from "next/image";
 
 const Hero = ({ pageLoaded }) => {
     const heroRef = useRef(null);
-
+    useEffect(() => {
+        (
+            async () => {
+                const LocomotiveScroll = (await import('locomotive-scroll')).default;
+                const locomotiveScroll = new LocomotiveScroll();
+            }
+        )()
+    }, [])
 
     return (
 
