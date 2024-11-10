@@ -7,6 +7,7 @@ import { LiaRobotSolid } from "react-icons/lia";
 import Image from "next/image";
 import dwp from "../../../public/dwp.webp";
 import frank from "../../../public/frank.png";
+import urkel from "../../../public/urkel.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,17 +46,32 @@ const Lox = () => {
           <span className={styles.setTrend}>we set them.</span>
         </p>
         <p className={styles.textLine} ref={addToRefs}>
-          Our team of skilled designers and strategists is
-        </p>
-        <p ref={addToRefs}>
-          dedicated to delivering{" "}
-          <span className={styles.results}>exceptional results</span> through a{" "}
-        </p>
-        <p className={styles.textLine} ref={addToRefs}>
-          <span className={styles.fearless}>fearless approach</span> to{" "}
           <Image
             style={{
-              height: "70px",
+              height: "80px",
+              width: "200px",
+              objectFit: "cover",
+              objectPosition: "top",
+              display: "inline-flex",
+              verticalAlign: "middle",
+              borderRadius: "50px",
+            }}
+            alt="image"
+            src={urkel}
+          />{" "}
+          Our team of skilled designers and strategists
+        </p>
+        <p ref={addToRefs}>
+          are dedicated to delivering{" "}
+          <span className={styles.results}>exceptional results</span>
+          {" "} through a{" "}
+        </p>
+        <p className={styles.textLine} ref={addToRefs}>
+
+          <span className={styles.fearless}>fearless approach</span> {" "}
+          <Image
+            style={{
+              height: "80px",
               width: "200px",
               objectFit: "cover",
               objectPosition: "top",
@@ -65,7 +81,7 @@ const Lox = () => {
             }}
             alt="image"
             src={dwp}
-          />{" "}
+          />{" "}to{" "}
           <span className={styles.creativity}>
             creativity{" "}
             <span className={styles.icons}>
