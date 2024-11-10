@@ -1,7 +1,12 @@
 import React, { useLayoutEffect, useRef } from "react";
-import styles from './Lox.module.scss';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import styles from "./Lox.module.scss";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { IoColorPaletteOutline } from "react-icons/io5";
+import { LiaRobotSolid } from "react-icons/lia";
+import Image from "next/image";
+import dwp from "../../../public/dwp.webp";
+import frank from "../../../public/frank.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,14 +25,14 @@ const Lox = () => {
       gsap.from(el, {
         scrollTrigger: {
           trigger: el,
-          start: "center bottom", // Starts the animation as each line enters the viewport
+          start: "top bottom", // Starts the animation as each line enters the viewport
           end: "bottom+=100px bottom",
           scrub: true,
         },
-        translateY: "100px",            // Slide up from 50px below
-        opacity: 0,       // Start with opacity 0
+        translateY: "100px", // Slide up from 50px below
+        opacity: 0, // Start with opacity 0
         duration: 0.5,
-        ease: "power3.out"
+        ease: "power3.out",
       });
     });
   }, []);
@@ -48,24 +53,58 @@ const Lox = () => {
         </p>
         <p className={styles.textLine} ref={addToRefs}>
           <span className={styles.fearless}>fearless approach</span> to{" "}
-          <span className={styles.creativity}>creativity and innovation.</span>{" "}
+          <Image
+            style={{
+              height: "70px",
+              width: "200px",
+              objectFit: "cover",
+              objectPosition: "top",
+              display: "inline-flex",
+              verticalAlign: "middle",
+              borderRadius: "50px",
+            }}
+            alt="image"
+            src={dwp}
+          />{" "}
+          <span className={styles.creativity}>
+            creativity{" "}
+            <span className={styles.icons}>
+              (<IoColorPaletteOutline /> + <LiaRobotSolid /> )
+            </span>{" "}
+            innovation.
+          </span>{" "}
         </p>
         <p className={styles.textLine} ref={addToRefs}>
-          Whether you&apos;re looking to enhance your brand,</p>
+          Whether you&apos;re looking to enhance your brand,
+        </p>
         <p className={styles.textLine} ref={addToRefs}>
-          create dynamic content, or
-          build interactive
+          create dynamic content, or build interactive
         </p>
         <p className={styles.textLine} ref={addToRefs}>
           experiences, we bring your{" "}
-          <span className={styles.setTrend}>vision to life</span> with{" "}
+          <span className={styles.setTrend}>
+            vision to life {" "}
+            <Image
+              style={{
+                height: "50px",
+                width: "50px",
+                objectFit: "cover",
+                objectPosition: "top",
+                display: "inline-flex",
+                verticalAlign: "middle",
+                borderRadius: "50px",
+              }}
+              alt="image"
+              src={frank}
+            />
+          </span>{" "}
+          with{" "}
         </p>
         <p className={styles.textLine} ref={addToRefs}>
           <span className={styles.results}>precision</span> and flair.
-
         </p>
       </div>
-    </div >
+    </div>
   );
 };
 
