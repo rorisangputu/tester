@@ -95,12 +95,12 @@
 
 .imageContainers {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     opacity: 0;
     z-index: 3;
     /* All images hidden initially */
-    transition: opacity 0.5s ease, transform 0.3s ease-in-out;
+    transition: opacity 0.2s ease, transform 0.3s ease-in-out;
     /* Smooth transition */
 }
 
@@ -118,22 +118,57 @@
 }
 
 .sndImg {
-    left: 30%;
-    bottom: 0;
+    left: 10%;
+    bottom: -10%;
+    transform: rotate(0deg);
 }
 
 .thirdImg {
-    left: 40%;
+    left: 25%;
+    top: -5%;
+    transform: rotate(7deg);
+}
+.tenImg {
+    left: 25%;
+    top: 55%;
+    transform: rotate(-7deg);
 }
 
 .fourthImg {
-    right: 30%;
-    bottom: 0;
+    left: 40%;
+    bottom: -15%;
+    
 }
 
 .fifthImg {
+    bottom: -35%;
+    left: 50%;
+    transform: rotate(-5deg);
+}
+.elevenImg {
+    top: 5%;
+    left: 45%;
+    transform: rotate(10deg);
+}
+.sixImg {
+    bottom: -30%;
+    right: 20%;
+    transform: rotate(-5deg);
+}
+.sevImg {
+    bottom: 15%;
+    right: 30%;
+   
+}
+.ateImg {
+    bottom: 25%;
+    right: 10%;
+   
+}
+.nineImg {
     bottom: -20%;
-    right: 0;
+    right: 0%;
+    transform: rotate(7deg);
 }
 
 /* Optional: Hover effect for images when hovered */

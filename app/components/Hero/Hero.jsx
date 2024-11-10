@@ -1,8 +1,6 @@
 import { useEffect, useRef } from "react";
 import styles from "./Hero.module.css";
 import { GoArrowDownRight } from "react-icons/go";
-import { gsap } from "gsap";
-import { revealText } from "./animations";
 import Lox from "../Lox/Lox";
 import Work from "../Work/Work";
 import Footer from "../Footer/Footer";
@@ -53,6 +51,24 @@ const Hero = ({ pageLoaded }) => {
                                     <Image src="https://images.unsplash.com/photo-1600191763994-a5e80844476e?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" fill objectFit="cover" />
                                 </div>
                                 <div className={`${styles.imageContainers} ${styles.fifthImg}`}>
+                                    <Image src="https://images.unsplash.com/photo-1600191763994-a5e80844476e?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" fill objectFit="cover" />
+                                </div>
+                                <div className={`${styles.imageContainers} ${styles.sixImg}`}>
+                                    <Image src="https://images.unsplash.com/photo-1600191763994-a5e80844476e?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" fill objectFit="cover" />
+                                </div>
+                                <div className={`${styles.imageContainers} ${styles.sevImg}`}>
+                                    <Image src="https://images.unsplash.com/photo-1600191763994-a5e80844476e?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" fill objectFit="cover" />
+                                </div>
+                                <div className={`${styles.imageContainers} ${styles.ateImg}`}>
+                                    <Image src="https://images.unsplash.com/photo-1600191763994-a5e80844476e?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" fill objectFit="cover" />
+                                </div>
+                                <div className={`${styles.imageContainers} ${styles.nineImg}`}>
+                                    <Image src="https://images.unsplash.com/photo-1600191763994-a5e80844476e?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" fill objectFit="cover" />
+                                </div>
+                                <div className={`${styles.imageContainers} ${styles.tenImg}`}>
+                                    <Image src="https://images.unsplash.com/photo-1600191763994-a5e80844476e?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" fill objectFit="cover" />
+                                </div>
+                                <div className={`${styles.imageContainers} ${styles.elevenImg}`}>
                                     <Image src="https://images.unsplash.com/photo-1600191763994-a5e80844476e?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" fill objectFit="cover" />
                                 </div>
                             </div>

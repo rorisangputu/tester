@@ -21,12 +21,12 @@ const Lox = () => {
         scrollTrigger: {
           trigger: el,
           start: "center bottom", // Starts the animation as each line enters the viewport
-          end: "bottom+=400px bottom",
+          end: "bottom+=100px bottom",
           scrub: true,
         },
         translateY: "100px",            // Slide up from 50px below
         opacity: 0,       // Start with opacity 0
-        duration: 1,
+        duration: 0.5,
         ease: "power3.out"
       });
     });
