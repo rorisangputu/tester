@@ -1,38 +1,63 @@
 .Lox {
-  width: 90%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 7rem;
+  padding-bottom: 15rem;
+  padding-top: 15rem;
   //border: 2px solid yellow;
+  background-color: rgb(176, 196, 226);
+  display: flex;
+  justify-content: center;
   .LoxText {
+    width: 90%;
     font-size: 6.5rem;
     padding: 1rem;
     font-family: sans-serif;
     font-weight: 300;
     overflow: hidden;
+    color: black;
+    line-height: 69px;
     .setTrend {
-      color: rgb(250, 111, 30);
+      //color: rgb(250, 111, 30);
       font-family: "Georgia", "Times New Roman", serif;
       font-style: italic;
       font-weight: 500;
+      font-size: 45px;
     }
     .results {
-      color: rgb(146, 167, 250);
+      //color: rgb(146, 167, 250);
       font-family: "Georgia", "Times New Roman", serif;
       font-style: italic;
+      font-size: 45px;
       font-weight: 500;
+      background: #f4f4f4;
+      border-radius: 6rem;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 25px;
+      padding-right: 25px;
+      color: black;
     }
     .fearless {
-      color: rgb(130, 135, 6);
+      //color: rgb(130, 135, 6);
       font-family: "Georgia", "Times New Roman", serif;
       font-style: italic;
       font-weight: 500;
+      font-size: 45px;
     }
     .creativity {
-      color: rgb(117, 163, 144);
+      //color: rgb(117, 163, 144);
       font-family: "Georgia", "Times New Roman", serif;
       font-style: italic;
       font-weight: 500;
+      font-size: 45px;
+      
+      .icons{
+        display:inline-flex;
+        align-items: center;
+        gap: 5px;
+      }
+      
     }
     .textLine{
       overflow: hidden;
