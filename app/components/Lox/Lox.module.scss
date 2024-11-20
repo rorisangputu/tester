@@ -75,6 +75,6 @@
 
 .lineChildren {
   transform: translateY(100px); // Start 100px below the normal position
-  opacity: 0; // Make the text invisible at first
+  opacity: 1; // Make the text invisible at first
   transition: transform 1s ease-out, opacity 1s ease-out; // Smooth transition for transform and opacity
 }
