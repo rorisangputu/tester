@@ -31,7 +31,7 @@ const Lox = () => {
           scrub: true,
         },
         translateY: "100px", // Slide up from 50px below
-        opacity: 0, // Start with opacity 0
+        opacity: 1, // Start with opacity 0
         duration: 0.5,
         ease: "power3.out",
       });
